@@ -11,9 +11,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginBottom="656dp"
+        android:layout_marginBottom="616dp"
         android:text="Converta dolar em real"
-        android:textSize="18"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -22,53 +22,68 @@
         android:id="@+id/txtprecodolar"
         android:layout_width="232dp"
         android:layout_height="43dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginBottom="575dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="88dp"
         android:ems="10"
         android:hint="Digite o preço do dolar"
         android:inputType="textShortMessage|textPersonName|text|numberDecimal"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/txtresultado"
-        android:layout_width="66dp"
-        android:layout_height="30dp"
-        android:text="R$:"
-        android:textSize="21"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.557" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:onClick="calcular"
-        android:text="Enviar"
-        app:layout_constraintBottom_toTopOf="@+id/txtresultado"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtvalor"
-        app:layout_constraintVertical_bias="0.217" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
         android:id="@+id/txtvalor"
         android:layout_width="232dp"
         android:layout_height="47dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="28dp"
         android:ems="10"
         android:hint="Digite a quantidade em U$"
         android:inputType="numberDecimal"
-        app:layout_constraintTop_toBottomOf="@+id/txtprecodolar"
-        tools:layout_editor_absoluteX="24dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtprecodolar" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:onClick="calcular"
+        android:text="Enviar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtresultado" />
+
+    <TextView
+        android:id="@+id/txtresultado"
+        android:layout_width="218dp"
+        android:layout_height="35dp"
+        android:text="clique em enviar"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.525" />
+
+    <TextView
+        android:id="@+id/valdol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="43dp"
+        android:text="Clique aqui para ver o valor do dolar"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtprecodolar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
